@@ -1,0 +1,42 @@
+package RealT4D;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl;
+
+contains
+  RealT4D.Auth.Intf in 'src\RealT4D.Auth.Intf.pas',
+  RealT4D.Auth in 'src\RealT4D.Auth.pas',
+  RealT4D.CORE.Intf in 'src\RealT4D.CORE.Intf.pas',
+  RealT4D.CORE in 'src\RealT4D.CORE.pas',
+  RealT4D.Response.Intf in 'src\RealT4D.Response.Intf.pas',
+  RealT4D.Response in 'src\RealT4D.Response.pas',
+  RealT4D.Types in 'src\RealT4D.Types.pas';
+
+end.
